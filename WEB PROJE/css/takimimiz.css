@@ -1,0 +1,51 @@
+body{
+    background: rgb(0, 174, 255);
+}
+
+#baslik {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: greenyellow;
+    padding : 1rem;
+}
+
+#takim{
+    background-color: greenyellow;
+    padding : 1rem;
+}
+
+.heading-small{
+    color: white;
+    padding-top: 6px;
+}
+
+#stadyum .heading-small{
+    padding-left:100px ;
+}
+
+#takim2{
+    display: flex;
+    padding: 1rem;
+}
+
+#takim2 #stadyum{
+    width: 3000px;
+    flex-direction: column;
+}
+
+#takim2 #stadyum img{
+    padding-left: 100px;
+    max-width: 60%;
+    height: auto;
+}
+
+#takim2 #forma{
+    display: flex;
+    flex-direction: column;
+}
+
+#takim2 #forma img{
+    
+    max-width: 60%;
+    height: auto;
+}

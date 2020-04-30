@@ -1,0 +1,34 @@
+body{
+    background: rgb(0, 174, 255);
+}
+
+#baslik {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: greenyellow;
+    padding : 3rem;
+    
+}
+
+#ozgecmis{
+    padding-top: 6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+table {
+    padding: 2rem;
+    width: 100%;
+    background-color: greenyellow;
+    font-size: 1.2rem;
+    
+}
+
+table, th, td {
+    border: 1.5px solid black;
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+  }
+
+

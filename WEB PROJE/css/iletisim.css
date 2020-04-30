@@ -1,0 +1,14 @@
+#baslik {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: greenyellow;
+    padding : 1rem;
+}
+
+#iletisim #form{
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+

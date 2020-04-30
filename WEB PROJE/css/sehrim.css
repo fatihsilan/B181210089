@@ -1,0 +1,29 @@
+body{
+    background: rgb(0, 174, 255);
+}
+
+#baslik {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: greenyellow;
+    padding : 1rem;
+}
+
+#sehrim{
+    padding-top: 2rem;
+    
+}
+
+.pbaslik{
+    background-color: greenyellow;
+    padding-left: 1rem;
+    
+
+}
+
+.paragraf{
+    background-color: greenyellow;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
