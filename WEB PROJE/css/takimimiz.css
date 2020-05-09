@@ -1,51 +1,54 @@
-body{
-    background: rgb(0, 174, 255);
+html{
+    background-color: rgb(153, 243, 255);
 }
 
-#baslik {
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: greenyellow;
-    padding : 1rem;
+#navbar{
+    background-color: rgb(0, 0, 155);
 }
 
-#takim{
-    background-color: greenyellow;
-    padding : 1rem;
-}
-
-.heading-small{
+ul li a{
     color: white;
-    padding-top: 6px;
 }
 
-#stadyum .heading-small{
-    padding-left:100px ;
+#navbar ul li a:hover {
+    background: greenyellow;
+    border-radius: 4px;
 }
 
-#takim2{
-    display: flex;
-    padding: 1rem;
+#section{
+    background-color: rgb(153, 243, 255);
 }
 
-#takim2 #stadyum{
-    width: 3000px;
-    flex-direction: column;
+#baslik
+{
+    background: rgb(0, 174, 255);
+    font-size: 2rem;
+    color: greenyellow;
 }
 
-#takim2 #stadyum img{
-    padding-left: 100px;
+#section p{
+    font-size: 1.1rem;
+}
+
+
+#section .container #stadyum img
+{
+    max-width: 90%;
+    height: auto;
+}
+
+#section .container #forma img
+{
     max-width: 60%;
     height: auto;
 }
 
-#takim2 #forma{
-    display: flex;
-    flex-direction: column;
+#section #bilgi2{
+    background-color: limegreen;
 }
 
-#takim2 #forma img{
-    
-    max-width: 60%;
-    height: auto;
-}
+
+
+
+
+

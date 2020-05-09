@@ -15,20 +15,24 @@ ul li a{
     border-radius: 4px;
 }
 
-#baslik
-{
-    background-color: rgb(153, 243, 255);
-    font-size: 2rem;
-}
-
 #section{
     background-color: rgb(153, 243, 255);
 }
 
-#section .container table{
-    background-color: limegreen;
+#baslik
+{
+    background-color: rgb(153, 243, 255);
+    font-size: 1.5rem;
+}
+
+#section img{
+    max-width: 65%;
+    height: auto;
 }
 
 #section .container{
-    font-size: 1.1rem;
-}
+    background-color: rgb(153, 243, 255);
+} 
+
+
+

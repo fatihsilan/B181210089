@@ -1,29 +1,31 @@
-body{
-    background: rgb(0, 174, 255);
+html{
+    background-color: rgb(153, 243, 255);
 }
 
-#baslik {
+#navbar{
+    background-color: rgb(0, 0, 155);
+}
+
+ul li a{
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background: greenyellow;
+    border-radius: 4px;
+}
+
+#section{
+    background-color: rgb(153, 243, 255);
+}
+
+#baslik
+{
+    background-color: rgb(153, 243, 255);
     font-size: 2rem;
-    font-weight: bold;
-    background-color: greenyellow;
-    padding : 1rem;
 }
 
-#sehrim{
-    padding-top: 2rem;
-    
+#section div{
+    background-color: limegreen;
+    color: white;
 }
-
-.pbaslik{
-    background-color: greenyellow;
-    padding-left: 1rem;
-    
-
-}
-
-.paragraf{
-    background-color: greenyellow;
-    padding-left: 1.5rem;
-    font-size: 1.2rem;
-}
-
