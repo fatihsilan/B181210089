@@ -29,3 +29,21 @@ ul li a{
     background-color: limegreen;
     color: white;
 }
+
+#carouselExampleControls img{
+    max-width: 40rem;
+    max-height: 450px;
+
+}
+
+#carouselExampleControls{
+    background-color: limegreen;
+    margin-left: 25rem;
+
+}
+
+#slider{
+    height: 400px;
+}
+
+

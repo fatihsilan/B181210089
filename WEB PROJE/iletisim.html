@@ -7,7 +7,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/iletisim.css">
+
+    <script>
+        function formkontrolu(){
+            if(document.getElementById("name").value == "") {
+                alert("İsim Boş Bırakılamaz !");
+                document.form.name.focus();
+                return;
+            }
+
+            if(document.getElementById("surname").value == "") {
+                alert("Soyisim Boş Bırakılamaz !");
+                document.form.surname.focus();
+                return;
+            }
+
+            if(document.getElementById("email").value == "") {
+                alert("Email Boş Bırakılamaz !");
+                document.form.email.focus();
+                return;
+            }
+
+            if(document.getElementById("email").value != "") {
+                if(document.getElementById("email").value.indexOf("@",0)== -1 || document.getElementById("email").value.indexOf("." , 0)== -1) {
+                    alert("Email Adresi Uygun Değil !");
+                    document.form.email.value = "";
+                    document.form.email.focus();
+                    return;
+                }
+            }
+
+            if(document.getElementsByName("gender")[0].checked==false && document.getElementsByName("gender")[1].checked==false ) {
+                alert("Cinsiyet Alanı Boş Bırakılamaz !");
+                return;
+            }
+
+            if(document.getElementsByName("hobi[]")[0].checked==false && document.getElementsByName("hobi[]")[1].checked==false && document.getElementsByName("hobi[]")[2].checked==false && document.getElementsByName("hobi[]")[3].checked==false && document.getElementsByName("hobi[]")[4].checked==false ) {
+                alert("Lütfen En Az Bir Hobi Seçiniz !");
+                return;
+            }
+
+            if(document.getElementById("message").value == "") {
+                alert("Lütfen Bir Not Giriniz !");
+                document.form.message.focus();
+                return;
+            }
+
+            document.form.submit();
+        }
+
+    </script>
 </head>
+
 <body>
     <div id="navbar">
         <nav class="navbar navbar-expand-sm justify-content-end justify-content-between">
@@ -43,6 +94,103 @@
             </ul>
         </nav>
     </div>
-    
+
+
+
+    <div id="baslik" class="p-2 font-weight-bold">Lütfen Bilgilerinizi Giriniz</div>
+
+    <div class="pl-3 pr-3 pt-1 pb-3 bg-secondary">
+        
+        <form method="post" action="php/iletisim.php" name="form" id="form" >
+
+            <div class="form-group"></div>
+                <label class="font-weight-bold" for="name"> İsim : </label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="İsminiz" >
+
+                <div class="form-group"></div>
+                <label class="font-weight-bold" for="surname"> Soyisim : </label>
+                <input type="text" name="surname" id="surname" class="form-control" placeholder="Soyisiminiz" >
+
+                <div class="form-group"></div>
+                <label class="font-weight-bold" for="email"> Email : </label>
+                <input type="email" name="email" id="email" class="form-control" >
+                
+                
+            <label class="font-weight-bold pt-1" for="gender"> Cinsiyetiniz : </label>
+            
+            <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                <input type="radio" class="form-check-input " name="gender" id="male" value="Erkek">Erkek  </label>
+                </div>
+              
+            <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                <input type="radio" class="form-check-input" name="gender" id="female" value="Kadın">Kadın </label>
+                </div>
+            <br>
+
+            <label class="font-weight-bold" for="hobiler"> Hobileriniz :  </label>
+            
+            <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                <input type="checkbox" class="form-check-input " name="hobi[]" id="spor" value="Spor">Spor </label>
+                </div>
+                  
+                <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold" >
+                <input type="checkbox" class="form-check-input" name="hobi[]" id="muzik" value="Muzik">Müzik  </label>
+                </div>
+                  
+                <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                <input type="checkbox" class="form-check-input" name="hobi[]" id="teknoloji" value="Teknoloji">Teknoloji </label>
+                </div>
+
+                <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                <input type="checkbox" class="form-check-input" name="hobi[]" id="sinema" value="Sinema"> Sinema </label>
+                </div>
+
+                <div class="form-check-inline">
+                <label class="form-check-label font-weight-bold">
+                <input type="checkbox" class="form-check-input" name="hobi[]" id="tarih" value="Tarih"> Tarih </label>
+                </div>
+
+                <br>
+
+            
+            <div class="form-group">
+                <label class="font-weight-bold" for="egitim"> Eğitim Türünüz (İsteğe Bağlı) : </label>
+                <select class="form-control" id="egitim" name="egitim">
+                    <option>Belirtmek İstemiyorum</option>
+                    <option>Önlisans</option>
+                    <option>Lisans</option>
+                    <option>Yüksek Lisans</option>
+                    <option>Doktora</option>
+                    </select>
+                    
+            </div>
+            
+            <div class="form-group">
+                <label class="font-weight-bold" for="message"> Mesajınız :</label>
+                <textarea class="form-control" rows="3" id="message" name="message" placeholder="Lütfen Bir Not Giriniz."></textarea>
+                </div>    
+
+            <div class="d-flex">
+                <div class="form-group"></div>
+            <input type="button" value="GÖNDER" onclick="formkontrolu()">
+
+            <div class="form-group pl-4" ></div>
+            <input type="reset" value="TEMİZLE">
+            </div>
+            
+
+        </form>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

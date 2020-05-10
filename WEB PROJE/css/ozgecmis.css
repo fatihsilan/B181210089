@@ -17,12 +17,13 @@ ul li a{
 
 #baslik
 {
-    background-color: rgb(153, 243, 255);
+    
     font-size: 2rem;
 }
 
 #section{
     background-color: rgb(153, 243, 255);
+    
 }
 
 #section .container table{
@@ -32,3 +33,14 @@ ul li a{
 #section .container{
     font-size: 1.1rem;
 }
+
+#section table{
+    font-size: 1.3rem;
+    
+}
+
+#section table th{
+    
+    background-color: greenyellow;
+}
+
