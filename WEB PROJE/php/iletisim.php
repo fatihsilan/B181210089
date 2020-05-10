@@ -61,7 +61,7 @@
         echo "Mail Adresiniz : " . $gelenMail . "<br />";
         echo "Cinsiyetiniz : " . $gelenCinsiyet . "<br />";
 
-        echo "Hobileriniz : ";
+        echo "Hobileriniz : "; 
         foreach($gelenHobi as $Bilgiler){
         echo $Bilgiler . "<br />";
         }
