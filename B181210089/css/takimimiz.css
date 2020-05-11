@@ -1,0 +1,60 @@
+html{
+    background-color: rgb(153, 243, 255);
+}
+
+#navbar{
+    background-color: rgb(0, 0, 155);
+}
+
+ul li a{
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background: greenyellow;
+    border-radius: 4px;
+}
+
+#section{
+    background-color: rgb(153, 243, 255);
+}
+
+#baslik
+{
+    background: rgb(0, 174, 255);
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+#section p{
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+#section .container #stadyum img
+{
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+#section .container #forma img
+{
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    
+}
+
+
+#section #bilgi2{
+    background-color: limegreen;
+}
+
+
+
+
+
+
+

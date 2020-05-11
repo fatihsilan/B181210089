@@ -1,0 +1,50 @@
+html{
+    background-color: rgb(153, 243, 255);
+}
+
+#navbar{
+    background-color: rgb(0, 0, 155);
+}
+
+ul li a{
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background: greenyellow;
+    border-radius: 4px;
+}
+
+#section{
+    background-color: rgb(153, 243, 255);
+}
+
+#baslik
+{
+    background-color: rgb(153, 243, 255);
+    font-size: 2rem;
+}
+
+#section div{
+    background-color: limegreen;
+    color: white;
+}
+
+#carouselExampleControls img{
+    max-width: 760px;
+    max-height: 378px;
+    margin: auto;
+
+}
+
+#carouselExampleControls{
+    background-color: limegreen;
+    
+
+}
+
+#slider{
+    height: 400px;
+}
+
+

@@ -1,0 +1,46 @@
+html{
+    background-color: rgb(153, 243, 255);
+}
+
+#navbar{
+    background-color: rgb(0, 0, 155);
+}
+
+ul li a{
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background: greenyellow;
+    border-radius: 4px;
+}
+
+#baslik
+{
+    
+    font-size: 2rem;
+}
+
+#section{
+    background-color: rgb(153, 243, 255);
+    
+}
+
+#section .container table{
+    background-color: limegreen;
+}
+
+#section .container{
+    font-size: 1.1rem;
+}
+
+#section table{
+    font-size: 1.3rem;
+    
+}
+
+#section table th{
+    
+    background-color: greenyellow;
+}
+
